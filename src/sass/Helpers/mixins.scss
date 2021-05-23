@@ -1,0 +1,33 @@
+@mixin for-size($size) {
+  @if $size==mobile {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $size==tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $size==max-desktop {
+    @media (max-width: 1279px) {
+      @content;
+    }
+  } @else if $size==desktop {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  } @else if $size==hd-desktop {
+    @media (min-width: 1680px) {
+      @content;
+    }
+  }
+}
+
+@mixin title-font-size {
+  font-size: 20px;
+  @include for-size(tablet) {
+    font-size: 26px;
+  }
+  @include for-size(desktop) {
+    font-size: 42px;
+  }
+}

@@ -1,0 +1,40 @@
+/* Helvetica 400 */
+@font-face {
+  font-family: 'Helvetica Now Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Helvetica Now Display'),
+    url('../../fonts/HelveticaNowDisplay.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../../fonts/HelveticaNowDisplay.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* Helvetica 700 */
+@font-face {
+  font-family: 'Helvetica Now Display';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Helvetica Now Display'),
+    url('../../fonts/HelveticaNowDisplay-Bold.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../../fonts/HelveticaNowDisplay-Bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* Helvetica 800 */
+@font-face {
+  font-family: 'Helvetica Now Display';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Helvetica Now Display'),
+    url('../../fonts/HelveticaNowDisplay-XBd.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../../fonts/HelveticaNowDisplay-XBd.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* Helvetica 900 */
+@font-face {
+  font-family: 'Helvetica Now Display';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Helvetica Now Display'),
+    url('../../fonts/HelveticaNowDisplay-Black.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../../fonts/HelveticaNowDisplay-Black.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
