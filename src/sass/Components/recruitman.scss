@@ -140,6 +140,7 @@
 }
 .desc-two {
   &:before {
+    z-index: 20;
     background-image: url(../../images/no.svg);
   }
 }

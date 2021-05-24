@@ -161,24 +161,43 @@
   }
 }
 .photo {
+  background: linear-gradient(180deg, rgba(2, 2, 19, 0) 0%, #020213 100%);
   &__wrapper {
     overflow: hidden;
+  }
+  &-item {
+    width: 100%;
+    min-width: 119px;
+    height: 67px;
+
+    @media (min-width: 768px) {
+      min-width: 189px;
+      height: 106px;
+    }
+    @media (min-width: 1440px) {
+      min-width: 378px;
+      height: 212px;
+    }
   }
   &__column {
     position: relative;
     margin: 0 auto;
     display: grid;
     gap: 6.3px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fill, minmax(119px, 189px));
+    // grid-template-columns: repeat(3, 1fr);
     @media (min-width: 768px) {
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(189px, 378px));
+      // grid-template-columns: repeat(5, 1fr);
       gap: 10px;
     }
     @media (min-width: 1440px) {
+      grid-template-columns: repeat(auto-fill, minmax(378px, 1fr));
       gap: 20px;
     }
     @media (min-width: 1920px) {
-      grid-template-columns: repeat(6, 1fr);
+      // grid-template-columns: repeat(6, 1fr);
     }
   }
   &__list-one {
@@ -303,20 +322,6 @@
     }
     &-6 {
       background-image: url(../../images/colThreeDesc6.png);
-    }
-  }
-
-  &-item {
-    min-width: 119px;
-    height: 67px;
-
-    @media (min-width: 768px) {
-      min-width: 189px;
-      height: 106px;
-    }
-    @media (min-width: 1440px) {
-      min-width: 378px;
-      height: 212px;
     }
   }
 
